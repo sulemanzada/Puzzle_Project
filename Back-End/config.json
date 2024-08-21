@@ -1,0 +1,27 @@
+{
+    "development": {
+        "cookie": {
+            "httpOnly": true,
+            "secure": false
+        },
+        "cors": {
+            "origin": "localhost",
+            "methods": ["GET", "POST", "PUT", "DELETE"],
+            "allowedHeaders": ["Content-Type", "Authorization"]
+        }
+    },
+    "production": {
+        "cookie": {
+            "httpOnly": true,
+            "secure": true,
+            "path": "/",
+            "sameSite": "None"
+        },
+        "cors": {
+            "origin": "159.89.28.237",
+            "methods": ["GET", "POST", "PUT", "DELETE"],
+            "allowedHeaders": ["Content-Type", "Authorization"],
+            "credentials": true
+        }
+    }
+}
